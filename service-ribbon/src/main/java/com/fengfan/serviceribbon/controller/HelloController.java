@@ -13,6 +13,7 @@ public class HelloController {
 
     @GetMapping(value="hi")
     public String hi(@RequestParam String name) {
+        System.out.println("hello world");
         return helloService.hiService( name );
     }
 }
